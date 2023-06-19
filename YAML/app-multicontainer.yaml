@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-pod
+spec:
+  containers:
+    - name: main-container
+      image: us-central1-docker.pkg.dev/warm-tokenizer-384309/demo/demo:1.0.0
+      command: ["/go_hw"]
+    - name: sidecar-container
+      image: us-central1-docker.pkg.dev/warm-tokenizer-384309/demo/demo:2.0.0
+      command: ["/go_hw"]
