@@ -16,4 +16,4 @@ spec:
         - name: demo-container
           image: us-central1-docker.pkg.dev/warm-tokenizer-384309/demo/demo:1.0.0
           ports:
-            - containerPort: 80
+            - containerPort: 8080
